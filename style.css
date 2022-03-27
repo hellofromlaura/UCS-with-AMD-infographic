@@ -1,3 +1,4 @@
+body, html { overflow-x:hidden; }
 body {
     min-width: 320px;
     font-family: CiscoSans,Arial,sans-serif;
@@ -112,57 +113,104 @@ ul {
 }
 .images-div-one {
     position: relative;
-    width: 580px;
+    width: 650px;
     bottom: 770px;
-    left: 382px;
-    z-index: 5;
+    left: 345px;
 }
 .building-image {
     display: block;
     width: 80%;
     margin: auto;
+    z-index: 1;
 }
 .blue-window {
     position: relative;
     width: 6px;
-    bottom: 450px;
-    left: 160px;
+    bottom: 400px;
+    left: 205px;
 }
 .red-window {
     position: relative;
     width: 6px;
-    bottom: 405px;
-    left: 135px;
+    bottom: 355px;
+    left: 185px;
 }
 .dark-blue-window {
     position: relative;
     width: 6px;
-    bottom: 390px;
-    left: 115px;
+    bottom: 340px;
+    left: 165px;
 }
 .yellow-window {
     position: relative;
     width: 6px;
-    bottom: 350px;
-    left: 125px;
+    bottom: 300px;
+    left: 175px;
 }
 .cloud-one {
     position: relative;
     width: 50px;
     bottom: 420px;
     left: 420px;
+    animation-name: cloud-movement;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
 }
 .cloud-two {
     position: relative;
     width: 65px;
-    bottom: 385px;
+    bottom: 380px;
     left: 405px;
+    animation-name: cloud-movement;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 45s;
+}
+@keyframes cloud-movement {
+    0% {
+      opacity: 0.1;
+      transform: translateX(40px);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+      transform: translateX(-250px);
+    }
 }
 .cloud-three {
     position: relative;
     width: 65px;
     bottom: 220px;
-    right: 80px;
+    right: 50px;
+    animation-name: cloud-movement2;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+@keyframes cloud-movement2 {
+    0% {
+      opacity: 0.1;
+      transform: translateX(50px);
+    }
+    8% {
+        opacity: 1;
+    }
+    93% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+      transform: translateX(-25px);
+    }
 }
 .two {
     height: 650px;
@@ -470,44 +518,44 @@ ul {
         float: none;
     }
     .images-div-one {
-        width: 455px;
-        bottom: 595px;
-        left: 310px;
+        width: 610px;
+        bottom: 630px;
+        left: 220px;
     }
     .blue-window {
-        width: 5px;
-        bottom: 354px;
-        left: 127px;
+        width: 6px;
+        bottom: 370px;
+        left: 195px;
     }
     .red-window {
-        width: 5px;
-        bottom: 317px;
-        left: 110px;
+        width: 6px;
+        bottom: 335px;
+        left: 170px;
     }
     .dark-blue-window {
-        width: 5px;
-        bottom: 305px;
-        left: 93px;
+        width: 6px;
+        bottom: 320px;
+        left: 150px;
     }
     .yellow-window{
-        width: 5px;
-        bottom: 270px;
-        left: 95px;
+        width: 6px;
+        bottom: 290px;
+        left: 155px;
     }
     .cloud-one {
         width: 45px;
-        bottom: 340px;
-        left: 310px;
+        bottom: 360px;
+        left: 385px;
     }
     .cloud-two {
-        width: 55px;
+        width: 60px;
         bottom: 315px;
-        left: 305px;
+        left: 355px;
     }
     .cloud-three {
-        width: 55px;
+        width: 60px;
         bottom: 180px;
-        right: 80px;
+        right: 50px;
     }
     .two {
         height: 475px;
@@ -1015,10 +1063,10 @@ ul {
         max-width: 675px;
         /* width: fit-content; */
     }
-    .main-div {
+    /* .main-div {
         width: 355px;
         margin: 0 auto;
-    }
+    } */
     .main-title,
     .section-one-intro {
         width: 300px;
