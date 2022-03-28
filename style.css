@@ -481,6 +481,7 @@ ul {
     position: absolute;
     width: 195px;
     margin: -365px 0px 0px -820px;
+    z-index: 0;
 }
 .server-rack {
     position: absolute;
