@@ -24,6 +24,13 @@ p, ul {
 ul {
     padding-left: 20px;
 }
+.animatable {
+    visibility: hidden;
+    animation-play-state: paused;
+}
+.animated {
+    visibility: visible;
+}
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -238,7 +245,16 @@ ul {
     position: absolute;
     width: 45%;
     margin: 120px 0px 0px 40px;
+    animation: rotate 35s linear infinite;
 }
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .section-two {
     position: relative;
     margin: 90px 0px 105px 30px;
@@ -293,12 +309,14 @@ ul {
     width: 270px;
     top: 170px;
     right: 50px;
+    animation: rotate 35s linear infinite;
 }
 .inner-square {
     position: absolute;
     width: 140px;
     top: 233px;
     right: 115px;
+    animation: rotate 35s linear infinite reverse;
 }
 .inner-green {
     position: absolute;
@@ -329,12 +347,14 @@ ul {
     width: 270px;
     top: 450px;
     right: 650px;
+    animation: rotate 35s linear infinite reverse;
 }
 .inner-circle {
     position: absolute;
     width: 170px;
     top: 500px;
     right: 700px;
+    animation: rotate 35s linear infinite;
 }
 .arrow {
     position: absolute;
@@ -347,6 +367,7 @@ ul {
     width: 270px;
     top: 780px;
     right: 50px;
+    animation: rotate 35s linear infinite;
 }
 .clouds {
     position: absolute;
@@ -555,12 +576,12 @@ ul {
     }
     .cloud-one {
         width: 45px;
-        bottom: 360px;
+        bottom: 395px;
         left: 385px;
     }
     .cloud-two {
         width: 60px;
-        bottom: 315px;
+        bottom: 355px;
         left: 355px;
     }
     .cloud-three {
@@ -575,6 +596,9 @@ ul {
         width: 640px;
         bottom: 415px;
     }
+    .outer-circle {
+        margin: 105px 0px 0px 30px;
+    }
     .section-two {
         margin: 15px 0px;
     }
@@ -583,13 +607,13 @@ ul {
     }
     .images-div-three {
         width: 60%;
-        margin: -610px 0px 0px 307px;
+        margin: -670px 0px 0px 307px;
     }
     .check-one {
-        margin: -440px 0px 0px 300px;
+        margin: -447px 0px 0px 300px;
     }
     .check-two {
-        margin: -254px 0px 0px 300px;
+        margin: -256px 0px 0px 300px;
     }
     .check-three {
         margin: -180px 0px 66px 300px;
@@ -855,12 +879,12 @@ ul {
     }
     .cloud-one {
         width: 50px;
-        bottom: 370px;
+        bottom: 420px;
         left: 410px;
     }
     .cloud-two {
         width: 65px;
-        bottom: 330px;
+        bottom: 380px;
         left: 380px;
     }
     .cloud-three {
@@ -887,7 +911,7 @@ ul {
     }
     .images-div-three {
         width: 645px;
-        margin: -700px 0px 0px 0px;
+        margin: -700px 0px 0px 35px;
     }
     .section-threee {
         width: 580px;
@@ -1072,12 +1096,11 @@ ul {
     }
     .main-container {
         max-width: 675px;
-        /* width: fit-content; */
     }
-    /* .main-div {
+    .main-div {
         width: 355px;
         margin: 0 auto;
-    } */
+    }
     .main-title,
     .section-one-intro {
         width: 300px;
@@ -1120,18 +1143,51 @@ ul {
         left: 63px;
     }
     .cloud-one {
-        width: 35px;
-        bottom: 222px;
+        width: 30px;
+        bottom: 245px;
         left: 200px;
     }
     .cloud-two {
-        width: 50px;
-        bottom: 190px;
+        width: 35px;
+        bottom: 230px;
         left: 180px;
     }
+    @keyframes cloud-movement {
+        0% {
+          opacity: 0.1;
+          transform: translateX(40px);
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+          opacity: 0.1;
+          transform: translateX(-150px);
+        }
+    }
     .cloud-three {
-        width: 50px;
+        width: 40px;
         bottom: 120px;
+        animation-duration: 10s;
+    }
+    @keyframes cloud-movement2 {
+        0% {
+          opacity: 0.1;
+          transform: translateX(0px);
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+          opacity: 0.1;
+          transform: translateX(-45px);
+        }
     }
     .flex-container {
         flex-direction: column;
