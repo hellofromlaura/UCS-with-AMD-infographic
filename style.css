@@ -1002,6 +1002,7 @@ ul {
         margin: 20px 0px 0px 30px;
     }
     .line-two {
+        opacity: 0;
         margin: -1083px 0px 220px 0px;
     }
     .server-one {
