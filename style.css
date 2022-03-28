@@ -128,25 +128,36 @@ ul {
     width: 6px;
     bottom: 400px;
     left: 205px;
+    animation: blink-animation 8s steps(5, start) infinite;
 }
 .red-window {
     position: relative;
     width: 6px;
     bottom: 355px;
     left: 185px;
+    animation-delay: 1.5s;
+    animation: blink-animation 10s steps(5, start) infinite;
 }
 .dark-blue-window {
     position: relative;
     width: 6px;
     bottom: 340px;
     left: 165px;
+    animation-delay: 3s;
+    animation: blink-animation 12s steps(5, start) infinite;
 }
 .yellow-window {
     position: relative;
     width: 6px;
     bottom: 300px;
     left: 175px;
+    animation: blink-animation 5s steps(5, start) infinite;
 }
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
 .cloud-one {
     position: relative;
     width: 50px;
