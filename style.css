@@ -519,9 +519,6 @@ ul {
 
 
 @media screen and (max-width: 992px) {
-    body {
-        background: pink;
-    }
     h1 {
         font-size: 53px;
     }
@@ -811,9 +808,6 @@ ul {
 
 @media screen and (max-width: 800px) {
 /* @media screen and (max-width: 767px) { */
-    body {
-        background: powderblue;
-    }
     .main-outer {
         max-width: 677px;
     }
@@ -1086,9 +1080,6 @@ ul {
     }
 }
 @media screen and (max-width: 676px) {
-    body {
-        background: teal;
-    }
     h3 {
         text-align: center;
     }
