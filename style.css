@@ -510,14 +510,33 @@ ul {
 .footer {
     margin: 100px 0 50px 0;
 }
+.logo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.vertical-divider {
+    flex: 0 0 1px;
+    border-left: 1px solid #0d274d;
+    margin: 0 15px;
+    }
 .footer-logo {
     width: 35%;
+}
+.amd-footer-logo {
+    width: 150px;
+    height: intrinsic;
 }
 .footer p {
     font-size: 10px;
 }
-
-
+.amd-footer {
+    display: flex;
+    align-items: end;
+}
+.amd-footer p {
+    font-size: 12px;
+}
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 53px;
