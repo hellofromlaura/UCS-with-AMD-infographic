@@ -4,21 +4,9 @@
     font-style: normal; 
     font-weight: 100;
 }
-@font-face { 
-    font-family: CiscoSans; 
-    src: url('./fonts/CiscoSansTTExtraLightOblique.woff') format("woff"); 
-    font-style: oblique; 
-    font-weight: 100;
-}
 @font-face { font-family: CiscoSans; 
     src: url('./fonts/CiscoSansTTLight.woff') format("woff"); 
     font-style: normal; 
-    font-weight: 300;
-}
-@font-face { 
-    font-family: CiscoSans; 
-    src: url('./fonts/CiscoSansTTLightOblique.woff') format("woff"); 
-    font-style: oblique; 
     font-weight: 300;
 }
 @font-face { 
@@ -30,4 +18,16 @@
     font-family: CiscoSans; src: url('./fonts/CiscoSansTTBold.woff') format("woff"); 
     font-style: normal; 
     font-weight: 700;
+}
+@font-face { 
+    font-family: CiscoSans; 
+    src: url('./fonts/CiscoSansTTExtraLightOblique.woff') format("woff"); 
+    font-style: oblique; 
+    font-weight: 100;
+}
+@font-face { 
+    font-family: CiscoSans; 
+    src: url('./fonts/CiscoSansTTLightOblique.woff') format("woff"); 
+    font-style: oblique; 
+    font-weight: 300;
 }
